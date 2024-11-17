@@ -1,0 +1,132 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Event Flyer Container */
+.event-flyer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f8f8f8;
+    padding: 1rem;
+}
+
+/* Flyer Content */
+.flyer-content {
+    background-color: white;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 2rem;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.event-title {
+    font-size: 2.5rem;
+    color: #4b6cb7;
+    margin-bottom: 1rem;
+}
+
+.event-details {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+.event-date,
+.event-location {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+.register-btn {
+    background-color: #4b6cb7;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #182848;
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+
+/* Tablets and Small Laptops (max-width: 768px) */
+@media (max-width: 768px) {
+    .flyer-content {
+        padding: 1.5rem;
+    }
+
+    .event-title {
+        font-size: 2rem;
+    }
+
+    .event-details {
+        font-size: 1rem;
+    }
+
+    .event-date,
+    .event-location {
+        font-size: 0.9rem;
+    }
+
+    .register-btn {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.8rem;
+    }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .event-flyer {
+        padding: 0.5rem;
+    }
+
+    .flyer-content {
+        padding: 1rem;
+    }
+
+    .event-title {
+        font-size: 1.6rem;
+    }
+
+    .event-details {
+        font-size: 0.9rem;
+    }
+
+    .event-date,
+    .event-location {
+        font-size: 0.8rem;
+    }
+
+    .register-btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+    }
+}
